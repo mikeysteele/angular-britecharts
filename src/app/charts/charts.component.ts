@@ -3,7 +3,7 @@ import { BarChartData } from './data/BarChartData';
 import { BrushChartData } from './data/BrushChartData';
 import { BulletChartData } from './data/BulletChartData';
 import { DonutChartData } from './data/DonutChartData';
-import { GrouppedBarChartData } from './data/GrouppedBarData';
+import { GroupedBarChartData } from './data/GroupedBarData';
 import { HeatmapChartData } from './data/HeatmapChartData';
 import { HorizontalStackedBarChartData } from './data/HorizontalStackedBarChartData';
 import { LineChartData } from './data/LineChartData';
@@ -16,7 +16,7 @@ import {
   LineChartComponent,
   DonutChartComponent,
   BulletChartComponent,
-  LegendChartComponent,
+  LegendComponent,
   BrushChartComponent,
   StackedAreaChartComponent,
   GroupedBarChartComponent,
@@ -32,10 +32,11 @@ export class AppComponent {
   @ViewChild('horizontalBarChart') horizontalBarChart: BarChartComponent;
   @ViewChild('lineChart') lineChart: LineChartComponent;
   @ViewChild('donutChart') donutChart: DonutChartComponent;
-  @ViewChild('donutLegendChart') donutLegendChart: LegendChartComponent;
+  @ViewChild('donutLegendChart') donutLegendChart: LegendComponent;
   @ViewChild('brushChart') brushChart: BrushChartComponent;
   @ViewChild('stackedAreaChart') stackedAreaChart: StackedAreaChartComponent;
-  @ViewChild('gruppedBarChart') gruppedBarChart: GroupedBarChartComponent;
+  @ViewChild('stackedBarChart') stackedBarChart: StackedBarChartComponent;
+  @ViewChild('groupedBarChart') groupedBarChart: GroupedBarChartComponent;
   @ViewChild('horizontalStackedBarChart') horizontalStackedBarChart: StackedBarChartComponent;
   @ViewChild('bulletChart1') bulletChart1: BulletChartComponent;
   @ViewChild('bulletChart2') bulletChart2: BulletChartComponent;
@@ -50,7 +51,7 @@ export class AppComponent {
   private brushChartDataGen: BrushChartData = new BrushChartData();
   private stepChartDataGen: StepChartData = new StepChartData();
   private stackedAreaChartDataGen: StackedAreaChartData = new StackedAreaChartData();
-  private grouppedBarChartDataGen: GrouppedBarChartData = new GrouppedBarChartData();
+  private grouppedBarChartDataGen: GroupedBarChartData = new GroupedBarChartData();
   private horizontalStackedBarChartDataGen: HorizontalStackedBarChartData = new HorizontalStackedBarChartData();
   private scatterPlotChartDataGen: ScatterPlotChartData = new ScatterPlotChartData();
   private heatmapChartDataGen: HeatmapChartData = new HeatmapChartData();
@@ -206,8 +207,8 @@ export class AppComponent {
   };
 
   // gruppedBarChart
-  public gruppedBarChartData = this.grouppedBarChartDataGen.getGrouppedBarChartData();
-  public gruppedBarChartConfig = {
+  public groupedBarChartData = this.grouppedBarChartDataGen.getGroupedBarChartData();
+  public groupedBarChartConfig = {
     properties: {
       tooltipThreshold: 600,
       grid: 'horizontal',

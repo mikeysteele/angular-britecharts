@@ -465,9 +465,9 @@
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var LegendChartComponent = /** @class */ (function (_super) {
-        __extends(LegendChartComponent, _super);
-        function LegendChartComponent(elementRef) {
+    var LegendComponent = /** @class */ (function (_super) {
+        __extends(LegendComponent, _super);
+        function LegendComponent(elementRef) {
             var _this = _super.call(this, elementRef) || this;
             _this.chart = chart$2();
             _this.selector = '.britechart-legend';
@@ -475,39 +475,39 @@
             _this.type = ChartType.Legend;
             return _this;
         }
-        LegendChartComponent.decorators = [
+        LegendComponent.decorators = [
             { type: core.Component, args: [{
-                        selector: 'brite-legend-chart',
+                        selector: 'brite-legend',
                         template: "",
                         styles: [":host{display:block}:host ::ng-deep .britechart{font-family:Karla,sans-serif;-webkit-font-smoothing:antialiased}:host ::ng-deep .select-disable{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}:host ::ng-deep .bar-load-state .chart-filter,:host ::ng-deep .donut-load-state .chart-filter,:host ::ng-deep .line-load-state .chart-filter,:host ::ng-deep .stacked-area-load-state .chart-filter{will-change:transform;-webkit-animation:1.5s linear infinite forwards swipe;animation:1.5s linear infinite forwards swipe}@-webkit-keyframes swipe{from{-webkit-transform:translateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(100%);transform:translateX(100%)}}@keyframes swipe{from{-webkit-transform:translateX(-100%);transform:translateX(-100%)}to{-webkit-transform:translateX(100%);transform:translateX(100%)}}:host ::ng-deep .horizontal-grid-line,:host ::ng-deep .vertical-grid-line{fill:none;shape-rendering:crispEdges;stroke:#eff2f5;stroke-width:1;stroke-dasharray:4,4}:host ::ng-deep .extended-x-line,:host ::ng-deep .extended-y-line{fill:none;shape-rendering:crispEdges;stroke:#d2d6df;stroke-width:1}:host ::ng-deep .tick line{fill:none;stroke:#adb0b6;stroke-width:1;shape-rendering:crispEdges}:host ::ng-deep .tick text{font-size:1rem;fill:#666a73;padding:12px}:host ::ng-deep .x-axis-label,:host ::ng-deep .y-axis-label{font-size:1rem;fill:#adb0b6}:host ::ng-deep .vertical-marker-container .vertical-marker{stroke:#d2d6df;stroke-width:1;fill:none}:host ::ng-deep .vertical-marker-container .data-point-highlighter{fill:#fff;stroke-width:2}:host ::ng-deep .tooltip-background{fill:rgba(255,255,255,.97);stroke:#d2d6df;stroke-width:1;border-radius:2px}:host ::ng-deep .britechart-legend .legend-entry.is-faded .legend-circle,:host ::ng-deep .britechart-legend .legend-entry.is-faded .legend-entry-name,:host ::ng-deep .britechart-legend .legend-entry.is-faded .legend-entry-value{opacity:.97;transition:opacity .2s ease-out;-moz-transition:opacity .2s ease-out;-webkit-transition:opacity .2s ease-out;opacity:.2}"]
                     }] }
         ];
         /** @nocollapse */
-        LegendChartComponent.ctorParameters = function () {
+        LegendComponent.ctorParameters = function () {
             return [
                 { type: core.ElementRef }
             ];
         };
-        return LegendChartComponent;
+        return LegendComponent;
     }(ChartBaseComponent));
 
     /**
      * @fileoverview added by tsickle
      * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var LegendChartModule = /** @class */ (function () {
-        function LegendChartModule() {
+    var LegendModule = /** @class */ (function () {
+        function LegendModule() {
         }
-        LegendChartModule.decorators = [
+        LegendModule.decorators = [
             { type: core.NgModule, args: [{
-                        declarations: [LegendChartComponent],
-                        exports: [LegendChartComponent],
+                        declarations: [LegendComponent],
+                        exports: [LegendComponent],
                         imports: [
                             common.CommonModule
                         ]
                     },] }
         ];
-        return LegendChartModule;
+        return LegendModule;
     }());
 
     /**
@@ -1028,7 +1028,7 @@
                             DonutChartModule,
                             GroupedBarChartModule,
                             HeatmapChartModule,
-                            LegendChartModule,
+                            LegendModule,
                             LineChartModule,
                             ScatterPlotChartModule,
                             SparkLineChartModule,
@@ -1043,7 +1043,7 @@
                             DonutChartModule,
                             GroupedBarChartModule,
                             HeatmapChartModule,
-                            LegendChartModule,
+                            LegendModule,
                             LineChartModule,
                             ScatterPlotChartModule,
                             SparkLineChartModule,
@@ -1078,7 +1078,7 @@
     exports.DonutChartModule = DonutChartModule;
     exports.GroupedBarChartModule = GroupedBarChartModule;
     exports.HeatmapChartModule = HeatmapChartModule;
-    exports.LegendChartModule = LegendChartModule;
+    exports.LegendModule = LegendModule;
     exports.LineChartModule = LineChartModule;
     exports.ScatterPlotChartModule = ScatterPlotChartModule;
     exports.SparkLineChartModule = SparkLineChartModule;
@@ -1091,7 +1091,7 @@
     exports.DonutChartComponent = DonutChartComponent;
     exports.GroupedBarChartComponent = GroupedBarChartComponent;
     exports.HeatmapChartComponent = HeatmapChartComponent;
-    exports.LegendChartComponent = LegendChartComponent;
+    exports.LegendComponent = LegendComponent;
     exports.LineChartComponent = LineChartComponent;
     exports.ScatterPlotChartComponent = ScatterPlotChartComponent;
     exports.SparklineChartComponent = SparklineChartComponent;

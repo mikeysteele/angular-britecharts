@@ -6,6 +6,7 @@ import { AppComponent as ChartsComponent } from './charts/charts.component';
 import { ChartModule } from '../../projects/ngx-britecharts/src/lib/chart.module';
 import { AppComponent } from './app.component';
 
+
 @NgModule({
   declarations: [
     ChartsComponent,

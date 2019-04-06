@@ -4,11 +4,11 @@ import chart from 'britecharts/dist/umd/legend.min';
 import { ChartType } from '../../chart.types';
 
 @Component({
-  selector: 'brite-legend-chart',
-  templateUrl: './legend-chart.component.html',
-  styleUrls: ['./legend-chart.component.scss']
+  selector: 'brite-legend',
+  templateUrl: './legend.component.html',
+  styleUrls: ['./legend.component.scss']
 })
-export class LegendChartComponent extends ChartBaseComponent {
+export class LegendComponent extends ChartBaseComponent {
   public chart = chart();
   protected selector = '.britechart-legend';
   protected clickSelector = '.legend-entry';

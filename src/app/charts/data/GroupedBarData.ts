@@ -1,5 +1,5 @@
-export class GrouppedBarChartData {
-    getGrouppedBarChartData() {
+export class GroupedBarChartData {
+    getGroupedBarChartData() {
         return [
             {
                 'stack': 'shiny',

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LegendChartComponent } from './legend-chart.component';
+import { LegendComponent } from './legend.component';
 
 describe('LegendChartComponent', () => {
-  let component: LegendChartComponent;
-  let fixture: ComponentFixture<LegendChartComponent>;
+  let component: LegendComponent;
+  let fixture: ComponentFixture<LegendComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LegendChartComponent ]
+      declarations: [ LegendComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LegendChartComponent);
+    fixture = TestBed.createComponent(LegendComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

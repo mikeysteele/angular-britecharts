@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BarChartModule } from './modules/bar-chart/bar-chart.module';
 import { DonutChartModule } from './modules/donut-chart/donut-chart.module';
-import { LegendChartModule } from './modules/legend-chart/legend-chart.module';
+import { LegendModule } from './modules/legend/legend.module';
 import { LineChartModule } from './modules/line-chart/line-chart.module';
 import { GroupedBarChartModule } from './modules/grouped-bar-chart/grouped-bar-chart.module';
 import { ScatterPlotChartModule } from './modules/scatter-plot-chart/scatter-plot-chart.module';
@@ -21,7 +21,7 @@ import { StepChartModule } from './modules/step-chart/step-chart.module';
     DonutChartModule,
     GroupedBarChartModule,
     HeatmapChartModule,
-    LegendChartModule,
+    LegendModule,
     LineChartModule,
     ScatterPlotChartModule,
     SparkLineChartModule,
@@ -36,7 +36,7 @@ import { StepChartModule } from './modules/step-chart/step-chart.module';
     DonutChartModule,
     GroupedBarChartModule,
     HeatmapChartModule,
-    LegendChartModule,
+    LegendModule,
     LineChartModule,
     ScatterPlotChartModule,
     SparkLineChartModule,

@@ -1,10 +1,9 @@
-<div class="container">
 <div class="row" id="bar">
   <div class="col-md-6">
     <article>
       <h2 class="tutorial__heading">Bar Chart</h2>
       <brite-bar-chart #barChart (chartClick)="onDemoChartClick($event)" [data]="firstBarChartData" [chartConfig]="firstBarChartConfig"></brite-bar-chart>
-      <button class="btn btn-default pull-right" (click)="exportBarChartClick()">Export bar chart</button>
+      <button class="btn float-right btn-outline-dark" (click)="exportBarChartClick()">Export bar chart</button>
     </article>
   </div>
   <div class="col-md-6">
@@ -32,7 +31,7 @@
           <brite-donut-chart  (chartClick)="onDemoChartClick($event)" #donutChart [data]="donutChartData" [chartConfig]="donutChartConfig"></brite-donut-chart>
         </div>
         <div class="col-12">
-          <brite-legend-chart  (chartClick)="onDemoChartClick($event)" #donutLegendChart [data]="donutChartData" [chartConfig]="donutLegendChartConfig"></brite-legend-chart>
+          <brite-legend  (chartClick)="onDemoChartClick($event)" #donutLegendChart [data]="donutChartData" [chartConfig]="donutLegendChartConfig"></brite-legend>
         </div>
       </div>
     </article>
@@ -63,7 +62,7 @@
   <div class="col-md-12">
     <article>
       <h2 class="tutorial__heading">Grouped Bar Chart with Tooltip</h2>
-      <brite-grouped-bar-chart #gruppedBarChart (chartClick)="onDemoChartClick($event)" [data]="gruppedBarChartData" [chartConfig]="gruppedBarChartConfig"></brite-grouped-bar-chart>
+      <brite-grouped-bar-chart #groupedBarChart (chartClick)="onDemoChartClick($event)" [data]="groupedBarChartData" [chartConfig]="groupedBarChartConfig"></brite-grouped-bar-chart>
     </article>
   </div>
 </div>
@@ -71,7 +70,7 @@
   <div class="col-sm-12">
     <article>
       <h2 class="tutorial__heading">Horizontal Stacked Bar Chart</h2>
-      <brite-stacked-bar-chart #gruppedBarChart [data]="horizontalStackedBarChartData" [chartConfig]="horizontalStackedBarChartConfig"
+      <brite-stacked-bar-chart #stackedBarChart [data]="horizontalStackedBarChartData" [chartConfig]="horizontalStackedBarChartConfig"
         ></brite-stacked-bar-chart>
     </article>
   </div>
@@ -110,11 +109,4 @@
     </article>
   </div>
 </div>
-<div class="row">
-  <div class="col-12 text-center">
-    <hr>
-    <h4><a target="_blank" href="https://www.colap.io"><img class="colap-logo" src="/ngx-britecharts/assets/logo_light.png"
-          alt="Colap logo"></a></h4>
-  </div>
-</div>
-</div>
+
