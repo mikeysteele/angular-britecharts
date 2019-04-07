@@ -1,0 +1,14 @@
+{
+  "name": "angular-britecharts",
+  "version": "7.0.0",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/mikeysteele/angular-britecharts"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0",
+    "britecharts": "^2.10.0",
+    "d3-selection": "^1.4.0"
+  }
+}

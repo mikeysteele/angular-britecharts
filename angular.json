@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-britecharts-demo": {
+    "angular-britecharts-demo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-britecharts-demo",
+            "outputPath": "dist/angular-britecharts-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-britecharts-demo:build"
+            "browserTarget": "angular-britecharts-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-britecharts-demo:build:production"
+              "browserTarget": "angular-britecharts-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-britecharts-demo:build"
+            "browserTarget": "angular-britecharts-demo:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "ngx-britecharts-demo-e2e": {
+    "angular-britecharts-demo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngx-britecharts-demo:serve"
+            "devServerTarget": "angular-britecharts-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngx-britecharts-demo:serve:production"
+              "devServerTarget": "angular-britecharts-demo:serve:production"
             }
           }
         },
@@ -134,33 +134,33 @@
         }
       }
     },
-    "ngx-britecharts": {
-      "root": "projects/ngx-britecharts",
-      "sourceRoot": "projects/ngx-britecharts/src",
+    "angular-britecharts": {
+      "root": "projects/angular-britecharts",
+      "sourceRoot": "projects/angular-britecharts/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngx-britecharts/tsconfig.lib.json",
-            "project": "projects/ngx-britecharts/ng-package.json"
+            "tsConfig": "projects/angular-britecharts/tsconfig.lib.json",
+            "project": "projects/angular-britecharts/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-britecharts/src/test.ts",
-            "tsConfig": "projects/ngx-britecharts/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-britecharts/karma.conf.js"
+            "main": "projects/angular-britecharts/src/test.ts",
+            "tsConfig": "projects/angular-britecharts/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-britecharts/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-britecharts/tsconfig.lib.json",
-              "projects/ngx-britecharts/tsconfig.spec.json"
+              "projects/angular-britecharts/tsconfig.lib.json",
+              "projects/angular-britecharts/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -170,5 +170,5 @@
       }
     }
   },
-  "defaultProject": "ngx-britecharts-demo"
+  "defaultProject": "angular-britecharts-demo"
 }

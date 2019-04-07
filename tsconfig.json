@@ -18,11 +18,11 @@
       "dom"
     ],
     "paths": {
-      "ngx-britecharts": [
-        "dist/ngx-britecharts"
+      "angular-britecharts": [
+        "dist/angular-britecharts"
       ],
-      "ngx-britecharts/*": [
-        "dist/ngx-britecharts/*"
+      "angular-britecharts/*": [
+        "dist/angular-britecharts/*"
       ]
     }
   }
