@@ -1,6 +1,6 @@
+import { Component, ElementRef, EventEmitter, Output } from '@angular/core';
 import chart from 'britecharts/src/charts/line.js';
 
-import { Component, ElementRef, Output, EventEmitter, Input } from '@angular/core';
 import { ChartBaseComponent } from '../../chart.base';
 import { ChartType } from '../../chart.types';
 

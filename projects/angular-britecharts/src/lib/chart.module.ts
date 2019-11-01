@@ -1,3 +1,4 @@
+import './polyfills';
 import { NgModule } from '@angular/core';
 import { BarChartModule } from './modules/bar-chart/bar-chart.module';
 import { DonutChartModule } from './modules/donut-chart/donut-chart.module';

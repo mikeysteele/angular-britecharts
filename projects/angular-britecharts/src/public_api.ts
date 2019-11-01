@@ -33,4 +33,4 @@ export * from './lib/modules/scatter-plot-chart/scatter-plot-chart.component';
 export * from './lib/modules/sparkline-chart/sparkline-chart.component';
 export * from './lib/modules/stacked-area-chart/stacked-area-chart.component';
 export * from './lib/modules/stacked-bar-chart/stacked-bar-chart.component';
-export * from './lib/modules/step-chart/step-chart.module';
+export * from './lib/modules/step-chart/step-chart.component';
