@@ -1,0 +1,8 @@
+
+:host{
+    ::ng-deep{
+        @import '../../common';
+        @import '~britecharts/src/styles/charts/bar';
+    }
+    display: block;
+}

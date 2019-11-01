@@ -1,0 +1,112 @@
+<div class="row" id="bar">
+  <div class="col-md-6">
+    <article>
+      <h2 class="tutorial__heading">Bar Chart</h2>
+      <brite-bar-chart #barChart (chartClick)="onDemoChartClick($event)" [data]="firstBarChartData" [chartConfig]="firstBarChartConfig"></brite-bar-chart>
+      <button class="btn float-right btn-outline-dark" (click)="exportBarChartClick()">Export bar chart</button>
+    </article>
+  </div>
+  <div class="col-md-6">
+    <article>
+      <h2 class="tutorial__heading">Horizontal Bar Chart</h2>
+      <brite-bar-chart #horizontalBarChart (chartClick)="onDemoChartClick($event)" [data]="horizontalBarChartData" [chartConfig]="horizontalBarChartConfig"
+        ></brite-bar-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" id="line">
+    <article>
+      <h2 class="tutorial__heading">Line Chart</h2>
+      <brite-line-chart #lineChart (chartClick)="onDemoLineChartClick($event)" [data]="lineChartData" [chartConfig]="lineChartConfig" ></brite-line-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6" id="donut">
+    <article>
+      <h2 class="tutorial__heading">Donut Chart</h2>
+      <div class="card--chart">
+        <div class="col-12">
+          <brite-donut-chart  (chartClick)="onDemoChartClick($event)" #donutChart [data]="donutChartData" [chartConfig]="donutChartConfig"></brite-donut-chart>
+        </div>
+        <div class="col-12">
+          <brite-legend  (chartClick)="onDemoChartClick($event)" #donutLegendChart [data]="donutChartData" [chartConfig]="donutLegendChartConfig"></brite-legend>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="col-md-6">
+    <article id="brush">
+      <h2 class="tutorial__heading">Brush Chart</h2>
+      <brite-brush-chart #brushChart  (chartClick)="onDemoChartClick($event)" [data]="brushChartData" [chartConfig]="brushChartConfig" ></brite-brush-chart>
+      <p class="js-date-range date-range is-hidden" *ngIf="brushChartDates.start">Selected from <span class="js-start-date">{{
+          brushChartDates.start | date }}</span> to <span class="js-end-date">{{ brushChartDates.end | date }}</span></p>
+      <p class="js-date-range date-range is-hidden" *ngIf="!brushChartDates.start">Select a date range</p>
+    </article>
+    <article id="step">
+      <h2 class="tutorial__heading">Step Chart</h2>
+      <brite-step-chart #stepChart  (chartClick)="onDemoChartClick($event)" [data]="stepChartData" [chartConfig]="stepChartConfig" ></brite-step-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" id="stacked-area">
+    <article>
+      <h2 class="tutorial__heading">Stacked Area Chart</h2>
+      <brite-stacked-area-chart (chartClick)="onDemoChartClick($event)" #stackedAreaChart [data]="stackedAreaChartData" [chartConfig]="stackedAreaChartConfig"></brite-stacked-area-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <article>
+      <h2 class="tutorial__heading">Grouped Bar Chart with Tooltip</h2>
+      <brite-grouped-bar-chart #groupedBarChart (chartClick)="onDemoChartClick($event)" [data]="groupedBarChartData" [chartConfig]="groupedBarChartConfig"></brite-grouped-bar-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <article>
+      <h2 class="tutorial__heading">Horizontal Stacked Bar Chart</h2>
+      <brite-stacked-bar-chart #stackedBarChart [data]="horizontalStackedBarChartData" [chartConfig]="horizontalStackedBarChartConfig"
+        ></brite-stacked-bar-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10">
+    <article>
+      <h2 class="tutorial__heading">Scatter Plot</h2>
+      <brite-scatter-plot-chart (chartClick)="onDemoScatterPlotChartClick($event)" #scatterPlotChart [data]="scatterPlotChartData" [chartConfig]="scatterPlotChartConfig"></brite-scatter-plot-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10">
+    <article>
+      <h2 class="tutorial__heading">Bullet Chart</h2>
+      <brite-bullet-chart (chartClick)="onDemoChartClick($event)" #bulletChart1 [data]="bulletChartData1" [chartConfig]="bulletChartConfig"></brite-bullet-chart>
+      <brite-bullet-chart (chartClick)="onDemoChartClick($event)"#bulletChart2 [data]="bulletChartData2" [chartConfig]="bulletChartConfig"></brite-bullet-chart>
+      <brite-bullet-chart  (chartClick)="onDemoChartClick($event)" #bulletChart3 [data]="bulletChartData3" [chartConfig]="bulletChartConfig"></brite-bullet-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-10">
+    <article>
+      <h2 class="tutorial__heading">Heatmap Chart</h2>
+      <brite-heatmap-chart #heatmapChart [data]="heatmapChartData" [chartConfig]="heatmapChartConfig"></brite-heatmap-chart>
+    </article>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <article>
+      <h2 class="tutorial__heading">Sparkline Chart</h2>
+      <brite-sparkline-chart #sparklineChart [data]="sparklineChartData" [chartConfig]="sparklineChartConfig"></brite-sparkline-chart>
+    </article>
+  </div>
+</div>
+
