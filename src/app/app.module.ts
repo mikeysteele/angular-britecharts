@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent as ChartsComponent } from './charts/charts.component';
 
-import { ChartModule } from '../../projects/ngx-britecharts/src/lib/chart.module';
+import { ChartModule } from '../../projects/angular-britecharts/src/lib/chart.module';
 import { AppComponent } from './app.component';
 
 

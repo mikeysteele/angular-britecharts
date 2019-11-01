@@ -22,27 +22,27 @@ import {
   GroupedBarChartComponent,
   StackedBarChartComponent,
   SparklineChartComponent
-} from 'projects/ngx-britecharts/src/public_api';
+} from 'projects/angular-britecharts/src/public_api';
 @Component({
   selector: 'app-charts',
   templateUrl: './charts.component.html'
 })
 export class AppComponent {
-  @ViewChild('barChart') barChart: BarChartComponent;
-  @ViewChild('horizontalBarChart') horizontalBarChart: BarChartComponent;
-  @ViewChild('lineChart') lineChart: LineChartComponent;
-  @ViewChild('donutChart') donutChart: DonutChartComponent;
-  @ViewChild('donutLegendChart') donutLegendChart: LegendComponent;
-  @ViewChild('brushChart') brushChart: BrushChartComponent;
-  @ViewChild('stackedAreaChart') stackedAreaChart: StackedAreaChartComponent;
-  @ViewChild('stackedBarChart') stackedBarChart: StackedBarChartComponent;
-  @ViewChild('groupedBarChart') groupedBarChart: GroupedBarChartComponent;
-  @ViewChild('horizontalStackedBarChart') horizontalStackedBarChart: StackedBarChartComponent;
-  @ViewChild('bulletChart1') bulletChart1: BulletChartComponent;
-  @ViewChild('bulletChart2') bulletChart2: BulletChartComponent;
-  @ViewChild('bulletChart3') bulletChart3: BulletChartComponent;
-  @ViewChild('heatmapChart') heatmapChart: HeatmapChartData;
-  @ViewChild('sparklineChart') sparklineChart: SparklineChartComponent;
+  @ViewChild('barChart', {static: false}) barChart: BarChartComponent;
+  @ViewChild('horizontalBarChart', {static: false}) horizontalBarChart: BarChartComponent;
+  @ViewChild('lineChart', {static: false}) lineChart: LineChartComponent;
+  @ViewChild('donutChart', {static: false}) donutChart: DonutChartComponent;
+  @ViewChild('donutLegendChart', {static: false}) donutLegendChart: LegendComponent;
+  @ViewChild('brushChart', {static: false}) brushChart: BrushChartComponent;
+  @ViewChild('stackedAreaChart', {static: false}) stackedAreaChart: StackedAreaChartComponent;
+  @ViewChild('stackedBarChart', {static: false}) stackedBarChart: StackedBarChartComponent;
+  @ViewChild('groupedBarChart', {static: false}) groupedBarChart: GroupedBarChartComponent;
+  @ViewChild('horizontalStackedBarChart', {static: false}) horizontalStackedBarChart: StackedBarChartComponent;
+  @ViewChild('bulletChart1', {static: false}) bulletChart1: BulletChartComponent;
+  @ViewChild('bulletChart2', {static: false}) bulletChart2: BulletChartComponent;
+  @ViewChild('bulletChart3', {static: false}) bulletChart3: BulletChartComponent;
+  @ViewChild('heatmapChart', {static: false}) heatmapChart: HeatmapChartData;
+  @ViewChild('sparklineChart', {static: false}) sparklineChart: SparklineChartComponent;
 
   private barChartDataGen: BarChartData = new BarChartData();
   private bulletChartDataGen: BulletChartData = new BulletChartData();
