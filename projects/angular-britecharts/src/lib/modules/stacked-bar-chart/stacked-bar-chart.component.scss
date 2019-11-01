@@ -1,0 +1,7 @@
+:host{
+    ::ng-deep{
+        @import '../../common';
+        @import '~britecharts/src/styles/charts/stacked-bar';
+    }
+    display: block;
+}
