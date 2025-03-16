@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { ChartBaseComponent } from '../../chart.base';
-import chart from 'britecharts/dist/umd/groupedBar.min';
+import chart from 'britecharts/dist/umd/charts/groupedBar.min';
 import { ChartType } from '../../chart.types';
 @Component({
   selector: 'brite-grouped-bar-chart',

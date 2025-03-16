@@ -1,6 +1,6 @@
 import { Component, ElementRef, Output, EventEmitter, Input } from '@angular/core';
 import { ChartBaseComponent } from '../../chart.base';
-import chart from 'britecharts/dist/umd/line.min';
+import chart from 'britecharts/dist/umd/charts/line.min';
 import { ChartType } from '../../chart.types';
 
 @Component({

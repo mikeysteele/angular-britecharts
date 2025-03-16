@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { ChartBaseComponent } from '../../chart.base';
 import { ChartType } from '../../chart.types';
-import chart from 'britecharts/dist/umd/sparkline.min';
+import chart from 'britecharts/dist/umd/charts/sparkline.min';
 
 @Component({
   selector: 'brite-sparkline-chart',

@@ -1,6 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { ChartBaseComponent } from '../../chart.base';
-import chart from 'britecharts/dist/umd/legend.min';
+import chart from 'britecharts/dist/umd/charts/legend.min';
 import { ChartType } from '../../chart.types';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import chart from 'britecharts/dist/umd/scatterPlot.min';
+import chart from 'britecharts/dist/umd/charts/scatterPlot.min';
 import { ChartType } from '../../chart.types';
 import { ChartBaseComponent } from '../../chart.base';
 

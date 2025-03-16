@@ -1,5 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
-import chart from 'britecharts/dist/umd/step.min';
+import chart from 'britecharts/dist/umd/charts/step.min';
 import { ChartType } from '../../chart.types';
 import { ChartBaseComponent } from '../../chart.base';
 

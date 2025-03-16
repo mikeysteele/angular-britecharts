@@ -1,6 +1,6 @@
 import { Component, ElementRef } from '@angular/core';
 import { ChartBaseComponent } from '../../chart.base';
-import chart from 'britecharts/dist/umd/bar.min';
+import chart from 'britecharts/dist/umd/charts/bar.min';
 import { ChartType } from '../../chart.types';
 @Component({
   selector: 'brite-bar-chart',

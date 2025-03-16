@@ -1,5 +1,5 @@
 import { Component, OnInit, SimpleChanges, OnChanges, ElementRef } from '@angular/core';
-import chart from 'britecharts/dist/umd/donut.min';
+import chart from 'britecharts/dist/umd/charts/donut.min';
 import { ChartBaseComponent } from '../../chart.base';
 import { Subject } from 'rxjs';
 import { ChartType } from '../../chart.types';

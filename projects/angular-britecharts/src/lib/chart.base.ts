@@ -1,12 +1,13 @@
 import { OnChanges, Input, Output, EventEmitter, ElementRef, SimpleChanges, OnInit, OnDestroy } from '@angular/core';
 import { Observable, fromEvent, Subject } from 'rxjs';
 import * as d3Selection from 'd3-selection';
-import colors from 'britecharts/dist/umd/colors.min';
-import miniTooltip from 'britecharts/dist/umd/miniTooltip.min';
-import tooltip from 'britecharts/dist/umd/tooltip.min';
+import colors from 'britecharts/dist/umd/charts/colors.min';
+import miniTooltip from 'britecharts/dist/umd/charts/miniTooltip.min';
+import tooltip from 'britecharts/dist/umd/charts/tooltip.min';
 import { ChartType, ChartConfig } from './chart.types';
 import { debounceTime, takeUntil } from 'rxjs/operators';
 
+@Directive()
 export class ChartBaseComponent implements OnInit, OnChanges, OnDestroy {
   @Input() public data: any[] | {
     dataByTopic: []

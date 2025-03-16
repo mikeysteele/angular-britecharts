@@ -1,5 +1,5 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
-import chart from 'britecharts/dist/umd/heatmap.min';
+import chart from 'britecharts/dist/umd/charts/heatmap.min';
 import { ChartBaseComponent } from '../../chart.base';
 import { ChartType } from '../../chart.types';
 
